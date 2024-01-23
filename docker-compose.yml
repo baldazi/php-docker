@@ -8,5 +8,9 @@ services:
       - 8000:80
     volumes:
       - ./public:/var/www/html
+    build: 
+      context: .
+      dockerfile: dockerfile
+      
 
     
