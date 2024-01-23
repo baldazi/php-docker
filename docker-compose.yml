@@ -1,6 +1,12 @@
-version: 3.8
+version: '3.8'
 
 services:
   php:
     image: php:8.2-apache
-    container-name: php82Learn
+    container_name: php82Learn
+    ports:
+      - 8000:80
+    volumes:
+      - ./public:/var/www/html
+
+    
